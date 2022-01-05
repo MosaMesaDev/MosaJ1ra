@@ -98,7 +98,7 @@ class CreateNewIncidentUtilTest {
         assertThat(result).isFalse()
     }
 
-    
+
     @Test
     fun `Everything filled in correctly returns true`(){
         val result = CreateNewIncidentUtil.validateIncidentInput(
