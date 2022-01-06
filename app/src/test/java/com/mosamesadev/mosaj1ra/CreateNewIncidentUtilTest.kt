@@ -13,6 +13,12 @@ class CreateNewIncidentUtilTest {
     // - the Impact is not filled in (1 user, 5 users, all users...)
     // - the description of the incident has less than 10 characters
 
+    // TO DO:
+    // After saving the initial input, all the variables should be saved into the 'history' of the incident.
+    // If any of the variables are empty or not match the history, then fail the test.
+
+    // There should be a history counter, keeping track of how many lines there are saved in the
+    // history of this incident. This is to make sure the next change will get a new unique history number.
 
     @Test
     fun `empty username returns false`(){
